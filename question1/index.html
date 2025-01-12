@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Toolbar -->
+    <div id="toolbar">
+      <button id="bold">B</button>
+      <button id="italic">I</button>
+      <select id="font-size">
+        <option value="12">12px</option>
+        <option value="14">14px</option>
+        <option value="16">16px</option>
+        <option value="18">18px</option>
+      </select>
+      <input type="color" id="font-color">
+      <button id="add-row">+ Row</button>
+      <button id="add-column">+ Column</button>
+      <button id="delete-row">- Row</button>
+      <button id="delete-column">- Column</button>
+    </div>
+
+    <!-- Formula Bar -->
+    <div id="formula-bar">
+      <span>fx</span>
+      <input type="text" id="formula-input" placeholder="Enter formula or value" />
+    </div>
+
+    <!-- Spreadsheet Grid -->
+    <div id="grid-container">
+      <table id="spreadsheet">
+        <thead>
+          <tr>
+            <!-- Headers will be dynamically generated -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cells will be dynamically generated -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
